@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Web App Directory</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="card.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="card.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="card.png" />
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+
+    <!-- Facebook Open Graph tags -->
+    <meta property="og:url" content="https://web.joodaloop.com" />
+    <meta property="og:title" content="Web App Directory" />
+    <meta property="og:description" content="Web apps that are good software." />
+    <meta property="og:image" content="https://web.joodaloop.com/card.png" />
+
+    <!-- Twitter Card (large image card) tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@joodaloop" />
+    <meta name="twitter:title" content="Web App Directory" />
+    <meta name="twitter:description" content="Web apps that are good software." />
+    <meta name="twitter:image" content="https://web.joodaloop.com/card.png" />
+
+    <meta name="description" content="Web apps that are good software." />
+
+    <style>
+      @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        src: url("./Inter.woff2");
+        font-display: swap;
+        font-weight: 1 999;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      *:first-child {
+        margin-top: 0px;
+      }
+
+      body {
+        margin: 0;
+        padding: 40px;
+        color: #555;
+        font-family: Inter, system-ui;
+      }
+
+      header {
+        font-size: 3.4rem;
+        font-weight: bold;
+        margin: auto;
+        max-width: 40rem;
+        text-align: center;
+      }
+
+      h1 {
+        line-height: 1em;
+        font-weight: 300;
+        padding-top: 16vh;
+      }
+
+      .introduction {
+        display: inline-block;
+        font-size: 1.6rem;
+      }
+
+      main {
+        margin-bottom: 3em;
+        max-width: 64rem;
+        margin: auto;
+        padding: 6rem 0em 8rem 0em;
+      }
+
+      footer {
+        padding: 0em 0.5em;
+        font-weight: 400;
+      }
+
+      footer a {
+        font-weight: 800;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .app {
+        padding: 2.4rem;
+        border-radius: 11px;
+        border: solid #eee 1px;
+        display: flex;
+        gap: 2.4rem;
+        margin-bottom: 4rem;
+      }
+
+      h3 {
+        font-size: 2em;
+        margin-bottom: 8px;
+      }
+
+      h3 a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .app a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .app a:hover,
+      .app p > a {
+        text-decoration: underline;
+      }
+
+      .logo {
+        width: 2.5rem;
+        height: 2.5rem;
+        border: none;
+      }
+
+      .content {
+        width: calc(100% - 10rem);
+        font-size: 16px;
+        line-height: 1.3em;
+        /*text-align: justify;*/
+      }
+
+      .content.right h3 {
+        /*text-align: right;*/
+      }
+
+      .ui {
+        width: 48%;
+        height: auto;
+        border: solid #555 4px;
+        border-radius: 7px;
+        box-shadow: 1px 2px 8px #88888822;
+      }
+
+      @media screen and (max-width: 940px) {
+        h1 {
+          max-width: 100%;
+        }
+
+        .introduction {
+          width: 100%;
+          text-align: left;
+        }
+
+        .app {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        body {
+          padding: 25px;
+        }
+
+        header {
+          font-size: 2.5em;
+        }
+
+        .app {
+          display: inline-block;
+        }
+
+        .logo {
+          width: 100%;
+          height: fit-content;
+          padding: 0em;
+          margin: 0em;
+        }
+
+        .content {
+          padding: 0.5em 1.5em;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>the web app directory</h1>
+
+      <div class="introduction">
+        <p>Great web apps are hard to come by.</p>
+        <p style="font-weight: 300">Balancing speed,</p>
+        <p>To make something that respects the user.</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="app">
+        <div class="content">
+          <h3>
+            <a href="https://www.are.na/">
+              <img class="logo" src="./logos/arena.png" style="padding-top: 5px" /> are.na
+            </a>
+          </h3>
+
+          <p>Are.na self-describes as:</p>
+          <ul>
+            <li>online software for saving and organizing the content that is important to you</li>
+            <li>a toolkit for assembling new worlds from the scraps of the old</li>
+          </ul>
+          <p>People describe Are.na as "playlists, but for ideas" or an "Internet memory palace."</p>
+        </div>
+        <img src="./ui/arena.png" class="ui" />
+      </div>
+
+      <div class="app" style="background-color: #fdf9f7">
+        <img src="./ui/craft.png" class="ui" />
+
+        <div class="content right">
+          <h3>
+            <a href="https://craft.do/"> <img class="logo" src="./logos/craft.png" /> Craft </a>
+          </h3>
+
+          <p>
+            About a year ago, though, Orosz and his team just bailed on that plan and decided to get back to building an
+            app for regular people. That meant simplifying everything about how it works, giving people the tools they
+            actually need to manage their life (and, sure, their work) in the app, and ditching the rest. “We just said,
+            ‘let’s build the best tool that helps you organize your life,’” Orosz says. “Your entire life.”
+          </p>
+        </div>
+      </div>
+
+      <div class="app" style="background-color: #f9fafb">
+        <div class="content">
+          <h3>
+            <a href="https://tldraw.com/"> <img class="logo" src="./logos/tldraw.png" /> tldraw </a>
+          </h3>
+
+          <p>Whiteboards</p>
+        </div>
+        <img src="./ui/tldraw.png" class="ui" />
+      </div>
+    </main>
+    <footer>
+      © Made by <a href="https://joodaloop.com">Judah</a>, you can make suggestions on
+      <a href="https://github.com/stealsocks/web-app-directory">Github</a>.
+    </footer>
+  </body>
+</html>
