@@ -1,15 +1,14 @@
 # to add
 
-arena
-craft
-feedbin
-Figma
 fika
-kinopio
-linear
 rayon.design
 readwise
-spline
-supernotes.app
+photopea
+descript
+replit
+observable
+framer
+mymind
+
+feedbin
 telegram
-tldraw

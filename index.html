@@ -13,17 +13,17 @@
     <link rel="shortcut icon" type="image/png" href="favicon.ico" />
 
     <!-- Facebook Open Graph tags -->
-    <meta property="og:url" content="https://web.joodaloop.com" />
+    <meta property="og:url" content="https://wa.joodaloop.com" />
     <meta property="og:title" content="Web App Directory" />
     <meta property="og:description" content="Web apps that are good software." />
-    <meta property="og:image" content="https://web.joodaloop.com/card.png" />
+    <meta property="og:image" content="https://wa.joodaloop.com/card.png" />
 
     <!-- Twitter Card (large image card) tags -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@joodaloop" />
     <meta name="twitter:title" content="Web App Directory" />
     <meta name="twitter:description" content="Web apps that are good software." />
-    <meta name="twitter:image" content="https://web.joodaloop.com/card.png" />
+    <meta name="twitter:image" content="https://wa.joodaloop.com/card.png" />
 
     <meta name="description" content="Web apps that are good software." />
 
@@ -46,7 +46,6 @@
 
       body {
         margin: 0;
-        padding: 40px;
         color: #555;
         font-family: Inter, system-ui;
       }
@@ -72,14 +71,15 @@
 
       main {
         margin-bottom: 3em;
-        max-width: 64rem;
-        margin: auto;
+        /*max-width: 64rem;*/
         padding: 6rem 0em 8rem 0em;
+        line-height: 1.6em;
       }
 
       footer {
-        padding: 0em 0.5em;
+        padding: 2em;
         font-weight: 400;
+        text-align: center;
       }
 
       footer a {
@@ -89,12 +89,15 @@
       }
 
       .app {
-        padding: 2.4rem;
+        padding: 6rem 2.4rem;
         border-radius: 11px;
-        border: solid #eee 1px;
+        /*border: solid #eee 1px;*/
         display: flex;
-        gap: 2.4rem;
+        align-items: start;
+        gap: 3rem;
         margin-bottom: 4rem;
+        max-width: 70rem;
+        margin: auto;
       }
 
       h3 {
@@ -138,50 +141,15 @@
       .ui {
         width: 48%;
         height: auto;
-        border: solid #555 4px;
+        border: solid #333 4px;
         border-radius: 7px;
         box-shadow: 1px 2px 8px #88888822;
       }
 
       @media screen and (max-width: 940px) {
-        h1 {
-          max-width: 100%;
-        }
-
-        .introduction {
-          width: 100%;
-          text-align: left;
-        }
-
-        .app {
-          width: 100%;
-        }
       }
 
       @media screen and (max-width: 500px) {
-        body {
-          padding: 25px;
-        }
-
-        header {
-          font-size: 2.5em;
-        }
-
-        .app {
-          display: inline-block;
-        }
-
-        .logo {
-          width: 100%;
-          height: fit-content;
-          padding: 0em;
-          margin: 0em;
-        }
-
-        .content {
-          padding: 0.5em 1.5em;
-          width: 100%;
-        }
       }
     </style>
   </head>
@@ -192,8 +160,10 @@
 
       <div class="introduction">
         <p>Great web apps are hard to come by.</p>
-        <p style="font-weight: 300">Balancing speed,</p>
-        <p>To make something that respects the user.</p>
+        <p>
+          <span style="font-weight: 300"> It takes either a small, dedicated team to To make something </span>that
+          respects the user.
+        </p>
       </div>
     </header>
 
@@ -216,33 +186,114 @@
         <img src="./ui/arena.png" class="ui" />
       </div>
 
-      <div class="app" style="background-color: #fdf9f7">
-        <img src="./ui/craft.png" class="ui" />
+      <div class="background" style="background: linear-gradient(#fdf9f7, #ffffff)">
+        <div class="app">
+          <div class="content">
+            <h3>
+              <a href="https://craft.do/"> <img class="logo" src="./logos/craft.png" /> Craft </a>
+            </h3>
 
-        <div class="content right">
-          <h3>
-            <a href="https://craft.do/"> <img class="logo" src="./logos/craft.png" /> Craft </a>
-          </h3>
-
-          <p>
-            About a year ago, though, Orosz and his team just bailed on that plan and decided to get back to building an
-            app for regular people. That meant simplifying everything about how it works, giving people the tools they
-            actually need to manage their life (and, sure, their work) in the app, and ditching the rest. “We just said,
-            ‘let’s build the best tool that helps you organize your life,’” Orosz says. “Your entire life.”
-          </p>
+            <p>
+              About a year ago, though, Orosz and his team just bailed on that plan and decided to get back to building
+              an app for regular people. That meant simplifying everything about how it works, giving people the tools
+              they actually need to manage their life (and, sure, their work) in the app, and ditching the rest. “We
+              just said, ‘let’s build the best tool that helps you organize your life,’” Orosz says. “Your entire life.”
+            </p>
+          </div>
+          <img src="./ui/craft.png" class="ui" />
         </div>
       </div>
 
-      <div class="app" style="background-color: #f9fafb">
-        <div class="content">
-          <h3>
-            <a href="https://tldraw.com/"> <img class="logo" src="./logos/tldraw.png" /> tldraw </a>
-          </h3>
+      <div class="background" style="background: linear-gradient(#f9fafb, #ffffff)">
+        <div class="app">
+          <div class="content">
+            <h3>
+              <a href="https://tldraw.com/">
+                <img class="logo" src="./logos/tldraw.png" style="padding: 4px" /> tldraw
+              </a>
+            </h3>
 
-          <p>Whiteboards</p>
+            <p>Whiteboards. Hell yeah.</p>
+          </div>
+          <img src="./ui/tldraw.png" class="ui" />
         </div>
-        <img src="./ui/tldraw.png" class="ui" />
       </div>
+
+      <div class="background" style="background: linear-gradient(#08090a, #38393a); color: #e6e6e6">
+        <div class="app">
+          <div class="content">
+            <h3>
+              <a href="https://linear.app/"> <img class="logo" src="./logos/linear.png" /> Linear </a>
+            </h3>
+
+            <p>Issue tracking you’ll enjoy using.</p>
+            <p>
+              What started as a simple issue tracker, has since evolved into a powerful project and issue tracking
+              system that streamlines workflows across the entire product development process. We don't think of Linear
+              as just a better "tool", but as a better "way" to build software.
+            </p>
+          </div>
+          <img src="./ui/linear.png" class="ui" />
+        </div>
+      </div>
+
+      <div class="background" style="background: linear-gradient(#f5f5f5, #ffffff)">
+        <div class="app">
+          <div class="content">
+            <h3>
+              <a href="https://figma.com/"> <img class="logo" src="./logos/figma.png" /> Figma </a>
+            </h3>
+
+            <p>Design tooling/</p>
+          </div>
+          <img src="./ui/figma.png" class="ui" />
+        </div>
+      </div>
+
+      <div class="background" style="background: linear-gradient(#101413, #404443); color: #e6e6e6">
+        <div class="app">
+          <div class="content">
+            <h3>
+              <a href="https://spline.design/">
+                <img class="logo" src="./logos/spline.webp" style="padding: 3px" /> Spline
+              </a>
+            </h3>
+
+            <p>Whiteboards</p>
+          </div>
+          <img src="./ui/spliney.png" class="ui" />
+        </div>
+      </div>
+
+      <div class="background">
+        <div class="app">
+          <div class="content">
+            <h3>
+              <a href="https://kinopio.club">
+                <img class="logo" src="./logos/kinopio.png" style="padding: 3px" /> Kinopio
+              </a>
+            </h3>
+
+            <p>Notes.</p>
+          </div>
+          <img src="./ui/kinopio.png" class="ui" />
+        </div>
+      </div>
+
+      <!--<div class="background" style="background: linear-gradient(#fbfbfb, #ffffff)">
+        <div class="app">
+          <div class="content">
+            <h3>
+              <a href="https://supernotes.app">
+                <img class="logo" src="./logos/supernotes.png" style="padding: 3px" /> Supernotes
+              </a>
+            </h3>
+
+            <p>Notes.</p>
+          </div>
+          <img src="./ui/supernotes.png" class="ui" />
+        </div>
+      </div>-->
     </main>
     <footer>
       © Made by <a href="https://joodaloop.com">Judah</a>, you can make suggestions on
