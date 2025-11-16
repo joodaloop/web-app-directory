@@ -67,6 +67,7 @@
       .introduction {
         display: inline-block;
         font-size: 1.6rem;
+        padding: 0em 1.5rem;
       }
 
       main {
@@ -146,10 +147,17 @@
         box-shadow: 1px 2px 8px #88888822;
       }
 
-      @media screen and (max-width: 940px) {
-      }
-
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 700px) {
+        .app {
+          flex-direction: column;
+          gap: 2rem;
+        }
+        .content {
+          width: 100%;
+        }
+        .ui {
+          width: 100%;
+        }
       }
     </style>
   </head>
@@ -161,9 +169,12 @@
       <div class="introduction">
         <p>Great web apps are hard to come by.</p>
         <p>
-          <span style="font-weight: 300"> It takes either a small, dedicated team to To make something </span>that
-          respects the user.
+          <span style="font-weight: 300">
+            It takes either a small, dedicated team or a very focused company to do all the work into making something
+            that feels as good as a native app, while working withing the constraints of the web.
+          </span>
         </p>
+        <p>To make something that respects the user.</p>
       </div>
     </header>
 
