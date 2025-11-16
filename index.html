@@ -130,7 +130,7 @@
       .content {
         width: calc(100% - 10rem);
         font-size: 16px;
-        line-height: 1.3em;
+        line-height: 1.5em;
         /*text-align: justify;*/
       }
 
@@ -182,6 +182,11 @@
             <li>a toolkit for assembling new worlds from the scraps of the old</li>
           </ul>
           <p>People describe Are.na as "playlists, but for ideas" or an "Internet memory palace."</p>
+          <p>
+            Originally built and run by one guy, it's managed to retain the quality of it's user's and curations over
+            time, making it the best mainstream-ish curation site on the internet. While being paid for by enough users
+            to be sustainable.
+          </p>
         </div>
         <img src="./ui/arena.png" class="ui" />
       </div>
@@ -194,13 +199,45 @@
             </h3>
 
             <p>
-              About a year ago, though, Orosz and his team just bailed on that plan and decided to get back to building
-              an app for regular people. That meant simplifying everything about how it works, giving people the tools
-              they actually need to manage their life (and, sure, their work) in the app, and ditching the rest. “We
-              just said, ‘let’s build the best tool that helps you organize your life,’” Orosz says. “Your entire life.”
+              Started out as a personal notes app,
+              <a href="https://www.craft.do/blog/welcome-to-craft3">doubled down </a> on that goal while maintaining a
+              really high bar for careful design and excellent frontend engineering. (<a
+                href="https://www.craft.do/blog/going-the-extra-mile-bartek"
+                >perfectly-choreographed</a
+              >
+              animations, fairly performant,
+              <a href="https://www.craft.do/blog/in-house-sync-protocol">custom sync</a>, and works surprisingly well
+              across device sizes).
             </p>
+            <p></p>
           </div>
           <img src="./ui/craft.png" class="ui" />
+        </div>
+      </div>
+
+      <div class="background" style="background: linear-gradient(#040810, #171c42); color: #e6e6e6">
+        <div class="app">
+          <div class="content">
+            <h3>
+              <a href="https://readwise.io/read">
+                <img class="logo" src="./logos/readwise.svg" style="padding: 3px" /> Readwise
+              </a>
+            </h3>
+
+            <p>
+              Read-it-later app for...<a href="https://blog.readwise.io/readwise-reading-app/">power users</a> of
+              read-it-later apps, I suppose. They did the hard work to make aggregation "just work" across websites,
+              PDFs, Youtube, etc. and added every other feature you could think of on top. They're very proud of their
+              <a href="https://docs.readwise.io/reader/docs/faqs/highlights-tags-notes">annotation feature</a>, which
+              works across all those media formats.
+            </p>
+            <p>
+              The local-first web app (<a href="https://github.com/readwiseio/rxdb_fork"> uses RxDB</a>) shows that they
+              take performance seriously. And the experience across the whole app is noticeably good (keyboard
+              shortcuts, full-text search, multi-pane reading, etc).
+            </p>
+          </div>
+          <img src="./ui/readwise.jpeg" class="ui" />
         </div>
       </div>
 
@@ -213,7 +250,17 @@
               </a>
             </h3>
 
-            <p>Whiteboards. Hell yeah.</p>
+            <p>
+              This is one of those "you need to use it to understand it" apps because it doesn't <i>look</i> like much.
+              And the details make so much of a difference it's hard to convey the quality from the list of features
+              alone. But I'll try anyway:
+            </p>
+
+            <p>
+              The arrows stick to the shape you attach them to, there's a wonderful minimap, realtime sync (just send an
+              edit link to anyone), the <i>subtle</i> hand-drawn style (each shape is a different outline stroke!), the
+              list of shapes is perfect for whiteboarding, the smoothness of the pen tool, etc. etc.
+            </p>
           </div>
           <img src="./ui/tldraw.png" class="ui" />
         </div>
@@ -226,11 +273,22 @@
               <a href="https://linear.app/"> <img class="logo" src="./logos/linear.png" /> Linear </a>
             </h3>
 
-            <p>Issue tracking you’ll enjoy using.</p>
             <p>
-              What started as a simple issue tracker, has since evolved into a powerful project and issue tracking
-              system that streamlines workflows across the entire product development process. We don't think of Linear
-              as just a better "tool", but as a better "way" to build software.
+              "Issue tracking you’ll enjoy using" is a very apt description. I once called it a "todo app built by
+              adults" and an
+              <a href="https://twitter.com/tarngerine/status/1837574406467735599">employee agreed</a> with me. There is
+              an unreasonable (bordering on
+              <a href="https://twitter.com/joodalooped/status/1896792465241514305">parody</a>) amount of effort put into
+              this software by some very talented <a href="https://paco.me/">people</a>.
+            </p>
+            <p>And it shows.</p>
+            <p>
+              Their <a href="https://linear.app/now/scaling-the-linear-sync-engine">custom</a> sync engine is their most
+              <a href="https://github.com/wzhudev/reverse-linear-sync-engine">famous feature</a>, and it is rather good
+              — one of the only ones to allow truly offline usage. But the keyboard-first design is also excellent, each
+              feature seems carefully considered, and their
+              <a href="https://linear.app/now/zero-bugs-policy">zero bugs policy</a> actually feels like a real
+              commitment.
             </p>
           </div>
           <img src="./ui/linear.png" class="ui" />
@@ -244,7 +302,8 @@
               <a href="https://figma.com/"> <img class="logo" src="./logos/figma.png" /> Figma </a>
             </h3>
 
-            <p>Design tooling/</p>
+            <p>Enough has been said about the technology that makes up this app.</p>
+            <p></p>
           </div>
           <img src="./ui/figma.png" class="ui" />
         </div>
@@ -259,7 +318,12 @@
               </a>
             </h3>
 
-            <p>Whiteboards</p>
+            <p>
+              Another impressive entry in the category of "stuffing a custom rendering engine into the browser", Spline
+              is a visual editor for making 3D modes and and adding interaction to them. And of course, it has realtime
+              collaboration.
+            </p>
+            <p>That's it, I think that sounds impressive enough.</p>
           </div>
           <img src="./ui/spliney.png" class="ui" />
         </div>
@@ -274,7 +338,12 @@
               </a>
             </h3>
 
-            <p>Notes.</p>
+            <p>
+              Built by <a href="https://pketh.org/"> one guy</a>, who worked on everything from the idiosyncratic
+              (charming, honestly) design, the custom sync engine, the canvas and all it's interactions, and continues
+              to chip away at it years later.
+            </p>
+            <p>A labour of love, really.</p>
           </div>
           <img src="./ui/kinopio.png" class="ui" />
         </div>

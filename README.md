@@ -2,13 +2,13 @@
 
 fika
 rayon.design
-readwise
 photopea
 descript
 replit
 observable
 framer
 mymind
-
+fastmail
 feedbin
+
 telegram
